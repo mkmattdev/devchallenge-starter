@@ -1,0 +1,10 @@
+{
+  "semi": true,
+  "singleQuote": false,
+  "printWidth": 100,
+  "trailingComma": "es5",
+  "singleAttributePerLine": true,
+  "vueIndentScriptAndStyle": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "plugins": ["prettier-plugin-tailwindcss"]
+}

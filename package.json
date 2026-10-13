@@ -1,0 +1,53 @@
+{
+  "name": "devchallenge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --host 127.0.0.1",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --config .prettierrc --write .",
+    "format:check": "prettier --config .prettierrc --check .",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm run format:check && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "overrides": {
+    "fontless": {
+      "esbuild": "0.28.1"
+    }
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "4.0.22",
+    "@supabase/supabase-js": "2.111.0",
+    "ai": "7.0.40",
+    "nuxt": "4.5.1",
+    "shiki": "4.3.1",
+    "unpdf": "1.8.0",
+    "vue": "3.5.40",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "1.16.0",
+    "@nuxt/fonts": "0.14.0",
+    "@playwright/test": "1.62.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "24.13.3",
+    "eslint": "10.8.0",
+    "eslint-config-prettier": "10.1.8",
+    "prettier": "3.9.6",
+    "prettier-plugin-tailwindcss": "0.8.1",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "vitest": "4.1.11",
+    "vue-tsc": "3.3.8"
+  }
+}

@@ -1,0 +1,15 @@
+# Końce linii ustalone na LF dla wszystkich systemów.
+#
+# Bez tego git na Windowsie zamienia je przy klonowaniu na CRLF, a Prettier oczekuje LF.
+# Efekt: `npm run check` wywala się na Windowsie w każdym pliku projektu,
+# zanim powstanie pierwsza linijka kodu.
+* text=auto eol=lf
+
+# Binaria zostawiamy w spokoju.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

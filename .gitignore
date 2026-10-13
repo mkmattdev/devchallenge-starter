@@ -1,0 +1,29 @@
+# Node / Nuxt
+node_modules
+.nuxt
+.output
+.nitro
+.cache
+dist
+
+# Zmienne środowiskowe
+.env
+.env.*
+!.env.example
+
+# System i logi
+.DS_Store
+*.log
+
+# Lokalne metadane projektu Vercel
+.vercel
+
+# Lokalna konfiguracja edytora i MCP
+.cursor/
+.vscode/
+
+tmp/
+
+# Playwright output
+test-results/
+playwright-report/
