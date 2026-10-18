@@ -17,10 +17,16 @@ wersja jest w `.nvmrc`.
 
 ## Start
 
-1. Zrób forka tego repozytorium na swoje konto GitHub (**Fork → Create fork**).
-2. W forku dodaj prowadzącego jako współpracownika: **Settings → Collaborators → Add people**
-   → `mkmattdev`. Dzięki temu kod kolejnych lekcji trafia prosto do Twojego repozytorium.
-3. Sklonuj forka i uruchom aplikację:
+Nie rób forka. Fork publicznego repozytorium też jest publiczny, a Twoje repozytorium ma być
+prywatne.
+
+1. Na GitHubie, na stronie `mkmattdev/devchallenge-starter`, kliknij **Use this template →
+   Create a new repository**. Jako nazwę wpisz `devchallenge-starter`, zaznacz **Private**
+   i kliknij **Create repository**.
+2. W swoim nowym repozytorium dodaj prowadzącego jako współpracownika: **Settings →
+   Collaborators → Add people** → `mkmattdev`. Dzięki temu kod kolejnych lekcji trafia prosto
+   do Twojego repozytorium.
+3. Sklonuj swoje repozytorium i uruchom aplikację:
 
 ```sh
 git clone https://github.com/TWOJ_LOGIN/devchallenge-starter.git
@@ -48,10 +54,11 @@ Swoją wersję zadania porównasz z wersją prowadzącego: jego commit na GitHub
 ```sh
 npm run lint
 npm run typecheck
-npm run format
+npm run format:check
 ```
 
-ESLint, typy i Prettier. `npm run check` łączy te kontrole z testami i buildem, ale na starcie
+ESLint, typy i formatowanie (Prettier). Gdy `npm run format:check` wskaże pliki, `npm run format`
+sam je poprawi. `npm run check` łączy te kontrole z testami i buildem, ale na starcie
 kończy się komunikatem „No test files found”, bo testów jeszcze nie ma. Pierwszy test pojawi
 się w kursie i od tej pory `npm run check` przechodzi w całości.
 
@@ -59,10 +66,22 @@ Konwencje kodu obowiązujące od pierwszej lekcji są w `.claude/skills/konwencj
 
 ## Gdyby coś nie działało
 
-- `git push` pyta o hasło: na Windows otworzy się logowanie GitHub w przeglądarce; na macOS
-  w miejscu hasła wklej token (GitHub → **Settings → Developer settings → Fine-grained tokens**,
-  dostęp tylko do tego repozytorium, **Contents: Read and write**).
+- `git commit` prosi o imię i e-mail: ustaw podpis w tym repozytorium i powtórz commit.
+
+  ```sh
+  git config user.name "Twoje imię"
+  git config user.email "twoj-adres@example.com"
+  ```
+
+- `git clone` albo `git push` pyta o hasło: na Windows otworzy się logowanie GitHub
+  w przeglądarce; na macOS w miejscu hasła wklej token (GitHub → **Settings → Developer
+  settings → Personal access tokens → Fine-grained tokens**, dostęp tylko do Twojego
+  repozytorium, **Contents: Read and write**).
 - `git pull` odmawia przez niezapisane zmiany: najpierw `git add -A`, `git commit`, `git push`.
 - Windows, PowerShell blokuje npm: otwórz zwykły `cmd` zamiast PowerShella.
 - Instalacja się wywala albo trwa bardzo długo: projekt na Pulpicie lub w Dokumentach może
   synchronizować OneDrive. Przenieś go na przykład do `C:\dev`.
+
+---
+
+DevChallenge · Mateusz Karwowski · mattdev.com.pl
