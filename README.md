@@ -38,6 +38,10 @@ npm run dev
 Otwórz adres podany w terminalu. Zobaczysz stronę z nagłówkiem „Projekt gotowy do pierwszej
 lekcji”. Ctrl+C zatrzymuje serwer.
 
+Jeśli zaczynasz od Kursu 2 albo 4, zrób te same kroki. Potem prowadzący wyśle Ci jednym commitem
+gotowy kod wcześniejszych kursów: zrób `git pull` i `npm ci`, a następnie zacznij od pierwszej
+lekcji swojego kursu.
+
 ## Praca w kursie
 
 Kod kolejnych lekcji dostajesz commitami prowadzącego. Pracujesz na gałęzi `main`, bez tagów
