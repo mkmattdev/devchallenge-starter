@@ -47,11 +47,22 @@ lekcji swojego kursu.
 Kod kolejnych lekcji dostajesz commitami prowadzącego. Pracujesz na gałęzi `main`, bez tagów
 i innych gałęzi.
 
+Gdy chcesz zacząć kolejną lekcję, napisz do prowadzącego na mateusz@mattdev.com.pl: podaj swój
+login na GitHubie i numer lekcji, np. L05. Kod lekcji przyjdzie commitem do Twojego repozytorium,
+wtedy zrób `git pull`.
+
 - Po swojej pracy: `git add -A`, `git commit -m "..."`, `git push`.
 - Przed lekcją: `git status` ma być czysty, potem `git pull`.
 - Pliki od prowadzącego do lekcji przychodzą tym samym `git pull`. Po zmianie bibliotek powtórz `npm ci`.
 
 Swoją wersję zadania porównasz z wersją prowadzącego: jego commit na GitHubie pokazuje różnice.
+
+## Dokumentacja w dalszych lekcjach
+
+Ten plik zostaje z Tobą do końca kursu. Opisy kolejnych części aplikacji przychodzą razem
+z kodem: `db/README.md` (baza danych), `docs/` (uruchomienie, testy na wdrożeniu, wdrożenie
+i monitoring AI), `mcp-server/README.md` (serwer MCP) i `AGENTS.md` (zasady dla agentów AI
+w edytorze).
 
 ## Sprawdzanie
 
