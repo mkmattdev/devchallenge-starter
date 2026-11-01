@@ -38,21 +38,25 @@ npm run dev
 Otwórz adres podany w terminalu. Zobaczysz stronę z nagłówkiem „Projekt gotowy do pierwszej
 lekcji”. Ctrl+C zatrzymuje serwer.
 
-Jeśli zaczynasz od Kursu 2 albo 4, zrób te same kroki. Potem prowadzący wyśle Ci jednym commitem
-gotowy kod wcześniejszych kursów: zrób `git pull` i `npm ci`, a następnie zacznij od pierwszej
+Jeśli zaczynasz od Kursu 2 albo 4, zrób te same kroki. Gotowy kod wcześniejszych kursów przyjdzie
+w pierwszym commicie prowadzącego: zrób `git pull` i `npm ci`, a następnie zacznij od pierwszej
 lekcji swojego kursu.
 
 ## Praca w kursie
 
-Kod kolejnych lekcji dostajesz commitami prowadzącego. Pracujesz na gałęzi `main`, bez tagów
-i innych gałęzi.
+Kod dostajesz commitami prowadzącego. Pracujesz na gałęzi `main`, bez tagów i innych gałęzi.
 
-Gdy chcesz zacząć kolejną lekcję, napisz do prowadzącego na mateusz@mattdev.com.pl: podaj swój
-login na GitHubie i numer lekcji, np. L05. Kod lekcji przyjdzie commitem do Twojego repozytorium,
-wtedy zrób `git pull`.
+**Kupiony kurs.** Po zakupie prowadzący wyśle do Twojego repozytorium cały kod kursu, do ostatniej
+lekcji, która miała już premierę. Każda lekcja, zadanie i rozwiązanie to osobny commit, więc na
+GitHubie zobaczysz zmiany każdego etapu. Zrób `git pull` i `npm ci`. Kod kolejnych lekcji przyjdzie po ich
+premierze: wtedy znowu zrób `git pull`.
+
+**Zajęcia 1:1.** Kod dostajesz lekcja po lekcji. Gdy chcesz zacząć kolejną lekcję, napisz do
+prowadzącego na mateusz@mattdev.com.pl: podaj swój login na GitHubie i numer lekcji, np. L05. Kod
+lekcji przyjdzie commitem do Twojego repozytorium, wtedy zrób `git pull`.
 
 - Po swojej pracy: `git add -A`, `git commit -m "..."`, `git push`.
-- Przed lekcją: `git status` ma być czysty, potem `git pull`.
+- Przed `git pull`: `git status` ma być czysty.
 - Pliki od prowadzącego do lekcji przychodzą tym samym `git pull`. Po zmianie bibliotek powtórz `npm ci`.
 
 Swoją wersję zadania porównasz z wersją prowadzącego: jego commit na GitHubie pokazuje różnice.
